@@ -1,11 +1,11 @@
-{5. Realice un programa que informe el valor total en pesos de una transacción en dólares. Para ello, el programa
-debe leer el monto total en dólares de la transacción, el valor del dólar al día de la fecha y el porcentaje (en
+{3. Realice un programa que informe el valor total en pesos de una transacción en dólares. Para ello, el programa
+debe leer: el monto total en dólares de la transacción, el valor del dólar al día de la fecha y el porcentaje (en
 pesos) de la comisión que cobra el banco por la transacción. Por ejemplo, si la transacción se realiza por 10
-dólares, el dólar tiene un valor 863,50 pesos y el banco cobra un 4% de comisión, entonces el programa deberá
+dólares, el dólar tiene un valor 1231,30 pesos y el banco cobra un 4% de comisión, entonces el programa deberá
 informar:
-La transacción será de 8980.4 pesos argentinos (resultado de multiplicar 10*863,50 y adicionarle el 4%)}
+La transacción será de 12805,52 pesos argentinos (resultado de multiplicar 10*1231,30 y adicionarle el 4%)}
 
-program ejercicio5;
+program ejercicio3;
 var
     monto, valor, porcentaje, transaccion: real;
 begin

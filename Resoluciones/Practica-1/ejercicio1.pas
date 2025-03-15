@@ -37,10 +37,10 @@ begin
 
     writeln('Ingresa otro numero'); // D
     readln(num1);
-    if (num1 MOD 33 = 0) then
+    if (num1 MOD 3 = 0) then
         writeln('El numero ', num1, ' es multiplo de 3')
     else
-        writeln('El numero ', num1, ' no es multiplo de 33');
+        writeln('El numero ', num1, ' no es multiplo de 3');
 
     writeln('Ingrese la base de un rectangulo'); // E
     readln(base);

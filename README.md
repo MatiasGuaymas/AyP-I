@@ -8,10 +8,12 @@
 * [**Práctica 1**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-1)
 
 ### Explicaciones
-* [**Práctica 1**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Explicaciones/AyP1%20-%20Explicacion%20Practica%201.pdf)
+* [**Práctica 1**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%201)
+* [**Práctica 2**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%202)
 
 ### Teorías
 * [**Clase 1**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/01%20-%20Clase%201.pdf)
+* [**Clase 2**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/02%20-%20Clase%202.pdf)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.

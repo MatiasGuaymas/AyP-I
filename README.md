@@ -19,7 +19,7 @@
 * [**Clase 2**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/02%20-%20Clase%202.pdf)
 * [**Clase 3**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/03%20-%20Clase%203.pdf)
 * [**Clase 4**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/04%20-%20Clase%204.pdf)
-* [**Clase 4**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/05%20-%20Clase%205.pdf)
+* [**Clase 5**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/05%20-%20Clase%205.pdf)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.

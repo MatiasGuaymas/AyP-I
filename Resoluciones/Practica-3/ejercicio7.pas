@@ -6,77 +6,91 @@ a. Para cada radar, la velocidad promedio de los automóviles.
 b. Para cada radar, la cantidad de vehículos que fueron multados.
 c. La patente del vehículo con mayor velocidad y la patente del vehículo con menor velocidad.}
 
-program ejercicio7;
-type
-    radar = record
-        codigo: integer;
-        velocidadMax: integer;
-        cantidadVehiculos: integer;
-    end;
-    vehiculo = record
-        patente: string;
-        velocidad: integer;
-    end;
-procedure leerVehiculo(var v: vehiculo);
+Program ejercicio7;
+Type
+
+  vehiculo =record
+    patente:string;
+    velocidad:real;
+  end;
+
+  radar = record
+     codigo:integer;
+     velocidadMaxima: real;
+     cantidadVehiculosRegistrados:integer;
+  end;
+
+Procedure maximaVelocidad (var maxV1: vehiculo; ve:vehiculo);
 begin
-    writeln('Ingrese la patente del vehiculo');
-    readln(v.patente);
-    writeln('Ingrese la velocidad del vehiculo');
-    readln(v.velocidad);
+	if (ve.velocidad > maxV1.velocidad) then begin
+	    maxV1:= ve;
+	end;
+
 end;
-procedure leerRadar(var r: radar);
+
+Procedure minimaVelocidad (var minV:vehiculo; ve:vehiculo);
 begin
-    writeln('Ingrese el codigo del radar');
+	if (ve.velocidad < minV.velocidad) then
+		minV:= ve;
+end;
+
+Procedure leerVehiculo (var ve:vehiculo);
+
+begin
+    Writeln ('ingrese patente');
+    readln(ve.patente);
+    Writeln ('ingrese velocidad');
+    readln(ve.velocidad);
+end;
+
+Procedure procesarRadar (r:radar; var maxV1, minV:vehiculo);
+var
+  ve:vehiculo;
+  i, cantMultados: integer;
+  sumaVelocidades:real;
+begin
+	cantMultados:= 0;
+	sumaVelocidades:= 0;
+	For i:= 1 to r.cantidadVehiculosRegistrados do begin
+		Writeln ('vehiculo ', i);
+        leervehiculo(ve);
+		minimaVelocidad(minV, ve);
+		maximaVelocidad(maxV1, ve);
+		sumaVelocidades:= sumaVelocidades + ve.velocidad;
+		if (ve.velocidad > r.velocidadMaxima) then
+			cantMultados:= cantMultados + 1;
+	end;
+	Writeln('La velocidad promedio de este radar es: ', (sumaVelocidades/r.cantidadVehiculosRegistrados):2:2);
+	Writeln('La cantidad de vehiculos multados es: ', cantMultados);
+end;
+
+Procedure leerRadar (var r:radar);
+
+begin
+    Writeln ('codigo de radar');
     readln(r.codigo);
-    if (r.codigo <> -1) then
-        begin
-            writeln('Ingrese la velocidad maxima permitida');
-            readln(r.velocidadMax);
-            writeln('Ingrese la cantidad de vehiculos registrados');
-            readln(r.cantidadVehiculos);
-        end;
+    if (r.codigo <> -1) then begin // ¿Es necesario el if?
+        Writeln ('velocidad maxima');
+        readln(r.velocidadMaxima);
+        Writeln ('cantidad de vehiculos registrados');
+        readln(r.cantidadVehiculosRegistrados);
+    end;
 end;
-procedure procesarRadar(var patenteMax, patenteMin: string);
+
 var
-    r: radar;
-    v: vehiculo;
-    i, sumaVel, cantMultados, maxVel, minVel: integer;
+ r: radar;
+ maxV1, minV:vehiculo;
+
 begin
+	maxV1.velocidad:= -1;
+	minV.velocidad:= 999;
+	Writeln ('ingrese los datos del radar (hasta ingresar -1)');
     leerRadar(r);
-    maxVel:= -1;
-    minVel:= 9999;
-    while (r.codigo <> -1) do
-        begin
-            sumaVel:= 0;
-            cantMultados:= 0;            
-            for i:= 1 to r.cantidadVehiculos do
-                begin
-                    leerVehiculo(v);
-                    sumaVel:= sumaVel + v.velocidad;
-                    if (v.velocidad > r.velocidadMax) then
-                        cantMultados:= cantMultados + 1;
-                    if (v.velocidad > maxVel) then
-                        begin
-                            maxVel:= v.velocidad;
-                            patenteMax:= v.patente;
-                        end;
-                    if (v.velocidad < minVel) then
-                        begin
-                            minVel:= v.velocidad;
-                            patenteMin:= v.patente;
-                        end;
-                end;
-            writeln('La velocidad promedio del radar ', r.codigo, ' es: ', sumaVel / r.cantidadVehiculos:0:2);
-            writeln('La cantidad de vehiculos multados en el radar ', r.codigo, ' es: ', cantMultados);
-            leerRadar(r);
-        end;
-end;
-var
-    patenteMax, patenteMin: string;
-begin
-    patenteMax:= '';
-    patenteMin:= '';
-    procesarRadar(patenteMax, patenteMin);
-    writeln('La patente del vehiculo con mayor velocidad es: ', patenteMax);
-    writeln('La patente del vehiculo con menor velocidad es: ', patenteMin);
+	While (r.codigo <> -1) do begin
+		Writeln('Para el radar: ', r.codigo, ' se registraron ' , r.cantidadVehiculosRegistrados, ' vehiculos. Datos de cada vehiculo' );
+		procesarRadar(r,maxV1, minV);
+		leerRadar(r);
+	end;
+	Writeln('El vehiculo con Mayor velocidad es: ', maxV1.patente, ' con velocidad: ', maxV1.velocidad:2:2);
+	Writeln('El vehiculo con menor velocidad es: ', minV.patente, 'con velocidad: ', minV.velocidad:2:2);
 end.

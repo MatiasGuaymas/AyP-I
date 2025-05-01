@@ -9,14 +9,16 @@
 * [**Práctica 2**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-2)
 * [**Práctica 3**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-3)
 * [**Práctica 4**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-4)
-* [**Práctica 4**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-5)
+* [**Práctica 5**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-5)
+* [**Práctica 6**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Resoluciones/Practica-6)
 
 ### Explicaciones
 * [**Práctica 1**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%201)
 * [**Práctica 2**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%202) 
 * [**Práctica 3**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%203)
 * [**Práctica 4**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%204)
-* [**Práctica 4**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%205)
+* [**Práctica 5**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%205)
+* [**Práctica 6**](https://github.com/MatiasGuaymas/AyP-I/tree/main/Explicaciones/Practica%206)
 
 ### Teorías
 * [**Clase 1**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/01%20-%20Clase%201.pdf)
@@ -25,6 +27,8 @@
 * [**Clase 4**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/04%20-%20Clase%204.pdf)
 * [**Clase 5**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/05%20-%20Clase%205.pdf)
 * [**Clase 6**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/06%20-%20Clase%206.pdf)
+* [**Clase 7**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/07%20-%20Clase%207.pdf)
+* [**Clase 8**](https://github.com/MatiasGuaymas/AyP-I/blob/main/Teorias/08%20-%20Clase%208.pdf)
 
 ## Cómo contribuir
 * Darle estrella (Star) al repositorio.
